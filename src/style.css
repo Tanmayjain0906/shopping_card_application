@@ -1,19 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=DM+Sans:opsz,wght@9..40,200&family=Montserrat:ital,wght@0,200;0,300;1,100;1,200&family=Playpen+Sans:wght@100&family=Poppins:ital,wght@0,200;0,300;1,100;1,200&family=Rubik&family=Work+Sans&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body
-{
+body {
     font-family: 'Montserrat'
 }
 
-.navbar
-{
+.navbar {
     background-color: black;
     color: white;
     padding: 10px;
@@ -24,21 +22,20 @@ body
     font-size: 18px;
 }
 
-.navbar a
-{
+.navbar a {
     text-decoration: none;
-    color: white ;
+    color: white;
     margin-right: 12px;
 }
 
-.home-header, .cart-header, .empty
-{
+.home-header,
+.cart-header,
+.empty {
     text-align: center;
     margin-top: 20px;
 }
 
-.card-container
-{
+.card-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 12px;
@@ -46,35 +43,30 @@ body
     padding: 10px;
 }
 
-.card
-{
-    width: 300px;
-    height: 350px;
+.card {
+    /* width: 300px;
+    height: 350px; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 12px;
     border: 1px solid black;
     transition: 0.5s;
 }
 
-.card:hover
-{
+.card:hover {
     transform: scale(1.02);
 }
 
-.card img
-{
+.card img {
     width: 100%;
     height: 200px;
 }
 
-.card p
-{
+.card p {
     margin-left: 10px;
 }
 
-#add-btn
-{
+#add-btn {
     padding: 10px;
     background-color: black;
     color: white;
@@ -82,71 +74,143 @@ body
     transition: 0.5s;
 }
 
-#add-btn:hover
-{
+#add-btn:hover {
     transform: scale(1.05);
 }
 
-.cart-card-container
-{
+.cart-card-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 12px;
     margin-top: 20px;
     padding: 10px;
     
-    width: 80%;
+    width: 70%;
 }
 
-.cart-detials
-{
+.cart-detials {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
 }
 
-.amounts
-{
+.amounts {
     background-color: black;
     color: white;
     display: flex;
     flex-direction: column;
     gap: 18px;
-    width: 18%;
+    width: 25%;
     height: fit-content;
     margin-top: 20px;
+    margin-right: 10px;
 }
 
-.amounts h3
-{
+.amounts h3 {
     text-align: center;
     margin-top: 20px;
 }
 
-.total-price
-{
+.total-price {
     display: flex;
     justify-content: space-between;
 }
 
-.total-price span
-{
+.total-price span {
     margin: 10px;
 }
 
-.all-products div
-{
+.all-products div {
     display: flex;
     justify-content: space-between;
     margin: 10px;
 }
 
-#check-btn
-{
+#check-btn {
     margin-bottom: 10px;
     background-color: white;
     border: none;
     padding: 12px;
     width: 94%;
     margin: 10px;
+
+}
+
+
+
+@media (max-width: 2240px) {
+    .card-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 1910px) {
+    .card-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1580px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1270px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 950px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
     
 }
+
+@media (max-width: 630px) {
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 1600px) {
+    .cart-card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1240px) {
+    .cart-card-container {
+       width: 100%;
+    }
+    .cart-detials
+    {
+        flex-direction: column;
+        gap : 20px;
+    }
+    .amounts
+    {
+        margin: 10px;
+        width : 400px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .cart-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 630px) {
+    .cart-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+
