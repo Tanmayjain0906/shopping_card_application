@@ -73,10 +73,15 @@ body {
     color: white;
     border: none;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 #add-btn:hover {
     transform: scale(1.05);
+}
+
+#add-btn:active {
+    transform: scale(1.02);
 }
 
 .cart-card-container {
